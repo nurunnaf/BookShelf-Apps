@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bookshelf Apps</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+
+  <body>
+    <header class="navbar-container">
+      <nav>
+        <h1></h1>
+        <h1>Bookshelf Apps</h1>
+      </nav>
+      <div>
+        <img src="assets/images/book.jpg" class="jumbotron" alt="buku" />
+      </div>
+    </header>
+    <main>
+      <!-- Form Masukkan Buku -->
+      <section class="input_section">
+        <h2>Masukkan Buku Baru</h2>
+        <form id="inputBook">
+          <div class="input">
+            <label for="inputBookTitle">Judul</label>
+            <input id="inputBookTitle" type="text" required />
+          </div>
+          <div class="input">
+            <label for="inputBookAuthor">Penulis</label>
+            <input id="inputBookAuthor" type="text" required />
+          </div>
+          <div class="input">
+            <label for="inputBookYear">Tahun</label>
+            <input id="inputBookYear" type="number" required />
+          </div>
+          <div class="input_inline">
+            <label for="inputBookIsComplete">Selesai dibaca</label>
+            <input id="inputBookIsComplete" type="checkbox" />
+          </div>
+          <button id="bookSubmit" type="submit">Masukkan Buku ke rak <span>Belum selesai dibaca</span></button>
+        </form>
+      </section>
+      <!-- Form Masukkan Buku END-->
+
+      <!-- Pencarian Buku -->
+      <section class="search_section">
+        <h2>Cari Buku</h2>
+        <form id="searchBook">
+          <label for="searchBookTitle">Judul</label>
+          <input id="searchBookTitle" type="text" />
+          <button id="searchSubmit" type="submit">Cari</button>
+        </form>
+      </section>
+      <!-- Pencarian Buku END -->
+
+      <!-- Rak Buku yang sudah di Input -->
+      <section class="book_shelf">
+        <h3>Belum selesai dibaca</h3>
+
+        <div id="incompleteBookshelfList" class="book_list"></div>
+      </section>
+
+      <section class="book_shelf">
+        <h3>Selesai dibaca</h3>
+
+        <div id="completeBookshelfList" class="book_list"></div>
+      </section>
+      <!-- Rak Buku yang sudah di Input END-->
+    </main>
+    <script src="script.js" type="text/javascript"></script>
+  </body>
+
+  <!-- Footer -->
+  <footer>
+    <p>Belajar FrontEnd Pemula Web &#169; 2023, Dicoding Academy | Created with <span style="color: #cd0202">&#9829;</span> by <a href="https://github.com/nurunnaf">Nurun Nafisah</a></p>
+  </footer>
+  <!-- Footer END-->
+</html>
